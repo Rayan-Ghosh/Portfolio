@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add any other styles for responsiveness or smooth scrolling as needed */
+    </style>
+</head>
+<body>
+    <!-- Header with navigation menu -->
+    <header>
+        <nav>
+            <div class="logo">Rayan's Portfolio</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-text">
+                Hi, My name is <span class="highlight">Rayan</span>
+                <div>and I am a passionate</div>
+                <span id="typed"></span>
+            </div>
+            <div class="intro-image">
+                <img src="bg1.png" alt="Background">
+            </div>
+        </section>
+        
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <h1>About Me</h1>
+            <p>Hello! I'm Rayan Ghosh, a first-year student pursuing a Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at ITER, Siksha 'O' Anusandhan University, Bhubaneshwar.</p>
+            <p>I am enthusiastically exploring the fundamentals while building a solid foundation in web development and Python. I'm also honing my skills in C and Java, starting with HackerRank challenges and personal projects.</p>
+            <p>I believe that every project, no matter how small, is an opportunity to learn and grow. I'm eager to dive deeper into the realms of technology and innovation, and I'm committed to making the most of my academic journey.</p> 
+
+            <!-- Tabs for Education, Skills, and Experience -->
+            <div class="tabs">
+                <p class="tab-button" onclick="openTab('education')">Education</p>
+                <p class="tab-button" onclick="openTab('skills')">Skills</p>
+                <p class="tab-button" onclick="openTab('experience')">Experience</p>
+            </div>
+
+            <!-- Tab content for Education -->
+            <div id="education" class="tab-content">
+                <h2>Education</h2>
+                <p>Primary Education: ICSE Graduate from Don Bosco, Park Circus, Kolkata</p>
+                <br>
+                <p>Secondary Education: ISC Graduate from Don Bosco, Park Circus, Kolkata</p>
+                <br>
+                <p>Undergraduate: Currently a First Year student pursuing Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at ITER, Siksha 'O' Anusandhan University, Bhubaneshwar.</p>
+            </div>
+
+            <!-- Tab content for Skills -->
+            <div id="skills" class="tab-content">
+                <h2>Skills</h2>
+                <p>Java</p>
+                <p>C</p>
+                <p>HTML</p>
+                <p>CSS & JavaScript (Still Learning!!)</p>
+                <p>Python (Basics)</p>
+            </div>
+
+            <!-- Tab content for Experience -->
+            <div id="experience" class="tab-content">
+                <h2>Experience</h2>
+                <p>I've recently embarked on my journey in the world of technology, primarily focusing on learning from others. While I have hands-on experience with data structures and algorithms in Java, I am aware that I have much to learn. This portfolio marks my first major project, showcasing my eagerness to grow and develop in the tech industry.</p>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <h1>Portfolio</h1>
+            <div class="work-card hackerank-card">
+                <div class="work-image">
+                    <img src="bg2.png" alt="HackerRank Logo" class="hackerank-logo">
+                </div>
+                <div class="work-content">
+                    <h3>HackerRank Profile</h3>
+                    <p>You can view my HackerRank profile to judge my problem-solving skills.</p>
+                    <a href="https://www.hackerrank.com/ghoshrayan73" target="_blank" class="hackerank-link">
+                        <img src="bg3.png" alt="Link Icon" class="link-logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-header">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="contact-details">
+                <p>Email: ghoshrayan73@gmail.com</p>
+                <p>Phone: +91 6291565304</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/your-profile" target="_blank">GitHub Profile</a></p>
+                <p>Instagram: <a href="https://instagram.com/your-profile" target="_blank">Instagram Profile</a></p>
+            </div>
+            <div class="contact-form">
+                <form action="mailto:ghoshrayan73@gmail.com" method="POST" enctype="text/plain">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- External JavaScript files -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script> <!-- Link to external JS -->
+</body>
+</html>
