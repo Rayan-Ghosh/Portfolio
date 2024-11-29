@@ -1,0 +1,342 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    background-color: rgb(73, 73, 120);
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(109, 109, 169);
+    padding: 0 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+}
+
+.menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(236, 153, 213);
+    font-size: 1.02rem;
+}
+
+/* Introduction Section */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 140px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.intro-text {
+    font-size: 2.5rem;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.intro-image {
+    max-width: 40%;
+    padding-top: 10px;
+}
+
+.intro-image img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 80px;
+}
+
+/* Highlight text */
+.highlight {
+    color: rgb(77, 237, 162);
+}
+
+/* Typed.js element */
+#typed {
+    color: rgb(77, 237, 162);
+}
+
+/* About Me Section */
+.about-section {
+    padding: 20px;
+    background-color: transparent;
+    margin: 20px auto;
+    color: white;
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(77, 237, 162);
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Tab buttons */
+.tab-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab-button:hover,
+.tab-button.active-link {
+    color: rgb(77, 237, 162);
+    border-bottom: 2px solid red;
+}
+
+/* Tab content styling */
+.tab-content {
+    display: none;
+    margin-top: 20px;
+    color: white;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+.tab-content h2 {
+    margin-bottom: 10px;
+    color: rgb(236, 153, 213);
+}
+
+.tab-content ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.tab-content ul li::before {
+    content: '\2022';
+    color: transparent;
+}
+
+.tab-content p {
+    margin: 0;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 20px;
+    background-color: transparent;
+    margin: 20px auto;
+    color: white;
+    max-width: 700px;
+    text-align: center;
+}
+
+.portfolio-section h1, .portfolio-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(77, 237, 162);
+}
+
+.work-card {
+    background: linear-gradient(to bottom, #444, #b52c2c);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.work-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.work-image img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    transform-origin: center;
+}
+
+.work-content {
+    flex: 2;
+    text-align: center;
+}
+
+.work-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.work-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* HackerRank specific styling */
+.hackerank-logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hackerank-card:hover .hackerank-logo {
+    transform: scale(1.2);
+}
+
+.hackerank-card:hover {
+    background-color: #ffcccb;
+}
+
+.hackerank-card:hover .work-content {
+    display: block;
+}
+
+.hackerank-card .work-content {
+    display: none;
+}
+
+.link-logo {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+    border: none;
+    display: inline;
+}
+
+.hackerank-card:hover .link-logo {
+    transform: scale(1.2);
+}
+
+.hackerank-link:hover .link-logo {
+    filter: brightness(1.2);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+    background-color: transparent;
+    margin: 20px auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align heading and contact details to the left */
+}
+
+.contact-header {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+    color: rgb(77, 237, 162)
+}
+
+.contact-details {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px; /* Add spacing below the details */
+}
+
+.contact-details a {
+    font-size: 1rem;
+    line-height: 2; /* Add space between links */
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: rgb(236, 153, 213);
+}
+
+/* Keep the form aligned to the right */
+.contact-form {
+    flex: 1;
+    align-self: flex-end; /* Align the form to the right */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%; /* Set the form width */
+    margin-top: -230px; /* Adjust this value to lift the form */
+}
+
+.contact-form label {
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(77, 237, 162);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
